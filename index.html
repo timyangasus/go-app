@@ -351,50 +351,46 @@ body{display:flex;align-items:center;justify-content:center}
           </div>
         </div>
       </div>
-      <!-- AiMesh -->
-      <span class="sl">AiMesh 狀態</span>
-      <div class="card" onclick="show('ov-mesh')" style="cursor:pointer">
-        <div style="padding:20px 16px 10px;display:flex;align-items:flex-start">
-          <!-- Internet -->
-          <div style="text-align:center;flex:1">
-            <div style="width:46px;height:46px;border-radius:50%;background:#1A5FAA;display:flex;align-items:center;justify-content:center;margin:0 auto 5px">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-            </div>
-            <div style="font-size:17px;font-weight:600;color:var(--tx)">Internet</div>
+      <!-- Status -->
+      <div style="font-size:20px;font-weight:700;color:var(--ac);letter-spacing:-.3px;padding:20px 20px 10px">Status</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px 16px">
+        <!-- Topology -->
+        <div style="background:var(--w);border-radius:var(--r);box-shadow:var(--sh);padding:18px 16px;display:flex;flex-direction:column;min-height:158px">
+          <div style="font-size:16px;font-weight:700;color:var(--t2)">Topology</div>
+          <div style="flex:1;display:flex;align-items:center;justify-content:center">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="12" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M12 7.2V13M12 13H5v3.8M12 13h7v3.8"/></svg>
           </div>
-          <div style="flex:1;height:1.5px;background:var(--ac);opacity:.25;margin-top:23px"></div>
-          <!-- 客廳 -->
-          <div style="text-align:center;flex:1">
-            <div style="width:46px;height:46px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;margin:0 auto 5px">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <div style="font-size:17px;font-weight:600;color:var(--tx)">客廳</div>
-            <div style="font-size:10px;color:var(--gn);margin-top:1px">● 良好</div>
-          </div>
-          <div style="flex:1;height:1.5px;background:var(--ac);opacity:.25;margin-top:23px"></div>
-          <!-- 臥室 -->
-          <div style="text-align:center;flex:1">
-            <div style="width:46px;height:46px;border-radius:50%;background:var(--ac);display:flex;align-items:center;justify-content:center;margin:0 auto 5px">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 012 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
-            </div>
-            <div style="font-size:17px;font-weight:600;color:var(--tx)">臥室</div>
-            <div style="font-size:10px;color:var(--gn);margin-top:1px">● 良好</div>
-          </div>
+          <div style="text-align:center;font-size:30px;font-weight:600;color:var(--tx)">5</div>
         </div>
-        <div style="padding:8px 16px 10px;border-top:1px solid var(--bd);display:flex;justify-content:space-between;align-items:center">
-          <div style="font-size:12px;color:var(--t3)">2 個節點・全部正常</div>
-          <div style="font-size:12px;color:var(--ac);font-weight:500">查看詳細 ›</div>
+        <!-- Client -->
+        <div style="background:var(--w);border-radius:var(--r);box-shadow:var(--sh);padding:18px 16px;display:flex;flex-direction:column;min-height:158px">
+          <div style="font-size:16px;font-weight:700;color:var(--t2)">Client</div>
+          <div style="flex:1;display:flex;align-items:center;justify-content:center">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="14" width="12" height="7" rx="1.5"/><path d="M5 14v-3a3 3 0 013-3h1"/><rect x="15" y="8" width="7" height="13" rx="1.5"/><line x1="18.5" y1="18" x2="18.5" y2="18.2"/></svg>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2);margin-bottom:4px"><span>Wireless</span><span style="font-size:19px;color:var(--tx);font-weight:600">5</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2)"><span>Wired</span><span style="font-size:19px;color:var(--tx);font-weight:600">2</span></div>
         </div>
-      </div>
-      <!-- Quick Actions -->
-      <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 20px 6px">
-        <span style="font-size:11px;font-weight:600;color:var(--t3);letter-spacing:.9px;text-transform:uppercase">快速操作</span>
-        <div style="width:28px;height:28px;border-radius:50%;background:var(--ib);display:flex;align-items:center;justify-content:center;cursor:pointer" id="qa-edit-btn">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--is)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        <!-- Real Time Traffic -->
+        <div style="background:var(--w);border-radius:var(--r);box-shadow:var(--sh);padding:18px 16px;display:flex;flex-direction:column;min-height:158px">
+          <div style="font-size:16px;font-weight:700;color:var(--t2)">Real Time Traffic</div>
+          <div style="flex:1;display:flex;align-items:center;justify-content:center">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12V6.5"/><path d="M12 12l4.2 2.4"/></svg>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2);margin-bottom:4px"><span>Download</span><span style="font-size:19px;color:var(--tx);font-weight:600">139.7</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2)"><span>Upload</span><span style="font-size:19px;color:var(--tx);font-weight:600">2.07</span></div>
+        </div>
+        <!-- CPU & RAM -->
+        <div style="background:var(--w);border-radius:var(--r);box-shadow:var(--sh);padding:18px 16px;display:flex;flex-direction:column;min-height:158px">
+          <div style="font-size:16px;font-weight:700;color:var(--t2)">CPU &amp; RAM</div>
+          <div style="flex:1;display:flex;align-items:center;justify-content:center">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="var(--ac)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><line x1="9" y1="2" x2="9" y2="6"/><line x1="15" y1="2" x2="15" y2="6"/><line x1="9" y1="18" x2="9" y2="22"/><line x1="15" y1="18" x2="15" y2="22"/><line x1="2" y1="9" x2="6" y2="9"/><line x1="2" y1="15" x2="6" y2="15"/><line x1="18" y1="9" x2="22" y2="9"/><line x1="18" y1="15" x2="22" y2="15"/></svg>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2);margin-bottom:4px"><span>CPU</span><span style="font-size:19px;color:var(--tx);font-weight:600">2%</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--t2)"><span>RAM</span><span style="font-size:19px;color:var(--tx);font-weight:600">76%</span></div>
         </div>
       </div>
-      <div id="qa-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:0 16px"></div>
-    
+
       </div></div>
 
     <!-- ═══ DEVICES ═══ -->
